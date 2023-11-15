@@ -1,0 +1,21 @@
+{  
+    "clientes":[
+        {
+            "name" : {
+                
+            },
+            "apellido": "atroz",
+            "direccion": [
+                25,46,43
+            ] 
+        },
+        {
+            "name" : {
+                "primero" : null,
+                "segundo" : "Diego"
+            },
+            "apellido": "jesus maria",
+            "edad": 24
+        }
+    ]
+} 
