@@ -28,11 +28,12 @@ public class App
             
         } */
 
-        //Depues de 8 horas, se logro serealizar el json.
+        //Instancia para la transformacion.
         Gson gson = new Gson();
+        //Ruta del archivo
         FileReader file = new FileReader("C:\\Users\\lucia\\Desktop\\Peoyects\\jsontest\\db.json");
-        
-        Countries datos = gson.fromJson(file, Countries.class);
+        //De Json a Objeto
+        Countries datos = gson.fromJson(file, Countries.class); 
 
         for(Integer i = 0; i < datos.getCountries().size(); i++){
             //System.out.println(datos.getCountries().get(i));
@@ -43,7 +44,7 @@ public class App
             System.out.println("Area: "+datos.getCountries().get(i).getArea());
             System.out.println("region: "+datos.getCountries().get(i).getRegion());
             System.out.println("subregion: "+datos.getCountries().get(i).getSubregion());
-            System.out.println("Continents: "+datos.getCountries().get(i).getContinents());
+            System.out.println("Continents: "+datos.getCountries().get(i).getContinents().get(0));
             System.out.println("Flags: "+datos.getCountries().get(i).getFlags().getPng());
             System.out.println("-------------------------------------------------------------------------------");
         }
